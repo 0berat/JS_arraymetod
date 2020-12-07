@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array Metotları</title>
+</head>
+<body>
+
+<script>
+
+    /*
+     * length
+     * toString()
+     * join
+     * pop
+     * push
+     * shift
+     * unshift
+     * splice
+     * splice for delete
+     * concat
+     * reverse
+    */
+
+
+    var sinifA = ["Gökhan", "Defne", "Berk", "Soner", "Handan"];
+    console.log(sinifA);
+
+    // length uzunluğunu verir.
+    console.log(sinifA.length);
+
+    //toString() array i string olarak verir.
+     console.log(sinifA.toString());
+
+    //join() string olarak verir fakat arraylerin aralarına virgül yerine başka bir karakter koyabilir.
+     console.log(sinifA.join("__"));
+
+
+    // pop() sonuncu elemanı atar
+var popItem = sinifA.pop();
+    console.log(popItem);
+    console.log(sinifA);
+
+
+    // push() eleman eklemek için sol tarafa
+    sinifA.push("caan");
+    console.log(sinifA );
+
+
+    //shift() kaydırma işlemi yapar pop gibi dir shift ilk elemanı çıkarır.
+    var shiftItem = sinifA.shift();
+    console.log(shiftItem);
+    console.log(sinifA);
+
+    // unshift shiftin tersi başa ekler.
+    sinifA.unshift("salam");
+    console.log(sinifA);
+
+
+    //splice istediğin yere ekleyip istediğini kaldırmaya yarar.
+sinifA.splice(2,1,"BALALALA","öbürbalalala");
+    console.log(sinifA);
+
+    sinifA.splice(0,1);
+    console.log(sinifA  );
+
+
+
+
+    // concat() arrayleri birleştirmeye yarayan komuttur.
+sinifB = new Array("ediss","tayfan","beart","isim");
+// Birleşen bu array lere bir array daha eklemek için  birleşmiş arraya concat yapıyoruz.
+
+
+var concatArray = sinifA.concat(sinifB);
+    console.log(concatArray);
+
+
+
+    // reverse()
+    console.log(sinifA.reverse()    );
+
+
+</script>
+
+</body>
+</html>
